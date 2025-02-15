@@ -15,6 +15,10 @@ li {
     margin-bottom: 1em;
 }
 
+ul, ol {
+    margin-left: 1em;
+}
+
 .container {
     max-width: 375px;
     margin: 0 auto;
@@ -49,6 +53,21 @@ li {
             font-size: 1.25rem;
             color: $dark-rose-color;
             margin-bottom: .825em;
+        }
+    }
+
+    .ingredients-container {
+        margin: 0 2em 2em;
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: $brown-color;
+            margin-bottom: .825em;
+        }
+
+        li::marker {
+            color: $brown-color;
         }
     }
 }
