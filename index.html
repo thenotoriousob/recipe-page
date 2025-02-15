@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
     
     <title>Frontend Mentor | Recipe page</title>
 
@@ -13,18 +16,21 @@
 
     <div class="container">
       <header>
-        <img src="/images/image-omelette.jpg" alt="Delicous omelette folder over with a salad inside" />
-        <h1>Simple Omelette Recipe</h1>
-        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        <img src="/images/image-omelette.jpeg" alt="Delicous omelette folder over with a salad inside" />
+        <div class="recipe-details-container">
+          <h1>Simple Omelette Recipe</h1>
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
       </header>
       <main>
-        <section>
+        <section class="preparation-container">
           <h2>Preparation time</h2>
 
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
+          <li><strong>Total:</strong> Approximately 10 minutes</li>
+          <li><strong>Preparation:</strong> 5 minutes</li>
+          <li><strong>Cooking:</strong> 5 minutes</li>
         </section>
 
         <section>

@@ -9,8 +9,14 @@ h1, h2 {
     font-family: $header-font-family;
 }
 
+li {
+    color: $stone-color;
+    margin-bottom: 1em;
+}
+
 .container {
     max-width: 375px;
+    margin: 0 auto;
 
     header {
         img {
@@ -29,5 +35,18 @@ h1, h2 {
 
     .recipe-details-container {
         padding: 2em;
+    }
+
+    .preparation-container {
+        background-color: $light-rose-color;
+        margin: 0 2em 2em;
+        padding: 1.5em;
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: $dark-rose-color;
+            margin-bottom: .825em;
+        }
     }
 }
