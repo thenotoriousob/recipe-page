@@ -1,5 +1,33 @@
 @import "resetform";
+@import "variables";
+
+body {
+    font-family: $main-font-family;
+}
+
+h1, h2 {
+    font-family: $header-font-family;
+}
 
 .container {
     max-width: 375px;
+
+    header {
+        img {
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.25rem;
+            color: $black-color;
+            margin-bottom: 0.7em;
+        }
+        p {
+            font-size: 1rem;
+            color: $stone-color;
+        }
+    }
+
+    .recipe-details-container {
+        padding: 2em;
+    }
 }
