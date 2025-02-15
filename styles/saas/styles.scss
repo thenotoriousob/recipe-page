@@ -13,6 +13,7 @@ h1, h2 {
 li {
     color: $stone-color;
     margin-bottom: 1em;
+    padding-left: 1em;
 }
 
 ul, ol {
@@ -56,18 +57,24 @@ ul, ol {
         }
     }
 
-    .ingredients-container {
+    .ingredients-container, .instructions-section {
         margin: 0 2em 2em;
+        border-bottom: 2px solid $border-color;
+        padding-bottom: 2em;
 
         h2 {
-            font-weight: bold;
-            font-size: 1.25rem;
+            font-size: 1.75rem;
             color: $brown-color;
             margin-bottom: .825em;
         }
 
+        li {
+            font-size: 1rem;
+        }
+
         li::marker {
             color: $brown-color;
+            font-weight: bold;
         }
     }
 }
