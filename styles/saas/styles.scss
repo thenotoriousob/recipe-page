@@ -6,6 +6,14 @@ body {
     background-color: $body-background-color;
 }
 
+header, main {
+    background-color: $white-color;
+}
+
+header {
+    padding-top: 1px;
+}
+
 h1, h2 {
     font-family: $header-font-family;
 }
@@ -28,8 +36,9 @@ ul, ol {
 .container {
     max-width: 375px;
     margin: 0 auto;
-    background-color: $white-color;
+    background-color: $container-background-color;
     padding-bottom: 1px;
+    padding-top: 1px;
 
     header {
         img {
@@ -111,5 +120,17 @@ ul, ol {
                 font-weight: bold;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header-image {
+        margin: 2.5em 2.5em 0 2.5em;
+        border-radius: 30px;
+        overflow: clip;
+    }
+    .container {
+        max-width: 620px;
+        padding: 3em 3em;
     }
 }
