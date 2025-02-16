@@ -6,14 +6,6 @@ body {
     background-color: $body-background-color;
 }
 
-header, main {
-    background-color: $white-color;
-}
-
-header {
-    padding-top: 1px;
-}
-
 h1, h2 {
     font-family: $header-font-family;
 }
@@ -33,12 +25,19 @@ ul, ol {
     margin-left: 1em;
 }
 
+.outer-container {
+    background-color: $container-background-color;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
 .container {
     max-width: 375px;
     margin: 0 auto;
-    background-color: $container-background-color;
-    padding-bottom: 1px;
+    background-color: $white-color;
     padding-top: 1px;
+    padding-bottom: 1px;
 
     header {
         img {
@@ -126,11 +125,15 @@ ul, ol {
 @media only screen and (min-width: 768px) {
     .header-image {
         margin: 2.5em 2.5em 0 2.5em;
-        border-radius: 30px;
+        border-radius: 15px;
         overflow: clip;
+    }
+    .outer-container {
+        max-width: 768px;
     }
     .container {
         max-width: 620px;
-        padding: 3em 3em;
+        border-radius: 15px;
+        margin: 3em auto;
     }
 }
