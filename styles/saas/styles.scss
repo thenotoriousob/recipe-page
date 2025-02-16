@@ -10,6 +10,11 @@ h1, h2 {
     font-family: $header-font-family;
 }
 
+p {
+    font-size: 1rem;
+    color: $stone-color;
+}
+
 li {
     color: $stone-color;
     margin-bottom: 1em;
@@ -33,10 +38,6 @@ ul, ol {
             font-size: 2.25rem;
             color: $black-color;
             margin-bottom: 0.7em;
-        }
-        p {
-            font-size: 1rem;
-            color: $stone-color;
         }
     }
 
@@ -75,6 +76,39 @@ ul, ol {
         li::marker {
             color: $brown-color;
             font-weight: bold;
+        }
+    }
+
+    .nutrition-container {
+        margin: 0 2em 2em;
+
+        h2 {
+            font-size: 1.75rem;
+            color: $brown-color;
+            margin-bottom: .825em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr {
+            border-bottom: 2px solid $border-color;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+
+        td {
+            color: $stone-color;
+            padding: 1em;
+
+            &.nutrition-quantity {
+                color: $brown-color;
+                font-weight: bold;
+            }
         }
     }
 }
