@@ -137,3 +137,9 @@ ul, ol {
         margin: 3em auto;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .outer-container {
+        max-width: 1440px;
+    }
+}
